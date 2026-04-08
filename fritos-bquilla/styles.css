@@ -1,22 +1,49 @@
-body {
-    background-color: 	#fff9ef;
-    
+/* ========================================
+   PALETA DE COLORES · Fritos B/quilla
+======================================== */
+:root {
+    --color-navbar:      #f4ce71;  /* Navbar, highlights, badges */
+    --color-fondo:       #fff9ef;  /* Fondo general del body */
+    --color-texto:       #494744;  /* Texto, bordes, footer, links nav */
+    --color-hero-texto:  #ffe4c4;  /* Texto sobre el banner hero */
+    --color-overlay:     #00000080;/* Overlay oscuro sobre el banner */
+    --color-rojo:        #c0392b;  /* Botones CTA, etiquetas picante, acentos */
+    --color-naranja:     #e8813a;  /* Hover en botones, íconos, separadores */
+    --color-cafe:        #3d2b1f;  /* Títulos h1/h2, texto de peso fuerte */
+    --color-mantequilla: #f9edd8;  /* Cards, secciones alternas, fondos article */
+    --color-verde:       #2e7d32;  /* Badges disponible, salsa verde, tags */
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*HEADER */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 2px solid #494744;
-    background-color: #f4ce71;
-    margin: 0%;
-}
-
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #494744;
+    background-color: var(--color-navbar);
+    border-bottom: 2px solid var(--color-texto);
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logoimg {
@@ -24,57 +51,227 @@ nav a {
     height: auto;
 }
 
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--color-rojo);
+}
+
+/* BANNER */
 .hero {
     background-image: linear-gradient(
-        #00000080,
-        #00000080), 
-        url(img/banner-fritos.jpeg);
-    text-align: center;
-    color: bisque;
+        var(--color-overlay),
+        var(--color-overlay)
+    ), url(img/banner-fritos.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    min-height: 380px;
-    position: relative;
     align-items: center;
-    text-align: center;
     justify-content: center;
+    min-height: 380px;
     padding: 15px 150px;
-
+    color: var(--color-hero-texto);
+    text-align: center;
 }
 
-h1{
+h1 {
     font-size: 50px;
+    color: var(--color-hero-texto);
+    margin: 0 0 16px;
 }
 
-.info h2 {
-    font-size: 30px;
-
-}
-
-.info {
+/* SECCIONES */
+.info,
+.frieds,
+.drinks,
+.sauces {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    gap: 20px;
+    /* CAMBIO: se eliminaron grid-template-columns y grid-template-rows
+       que estaban mezclados con flex sin efecto */
 }
-.info-text{
+
+/* Secciones alternas con fondo mantequilla para separar visualmente */
+.frieds,
+.sauces {
+    background-color: var(--color-mantequilla);
+}
+
+.info-text {
     width: 50%;
-    text-align: center;
+    /* CAMBIO: text-align center → left, se lee mejor en bloques de texto */
+    text-align: left;
+}
+
+.info-text h2 {
+    font-size: 30px;
+    color: var(--color-cafe);
+    margin-top: 0;
+}
+
+.info-text h3 {
+    color: var(--color-naranja);
 }
 
 .info-img {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     align-items: center;
+    flex-wrap: wrap; /* AÑADIDO: las imágenes bajan si no caben */
+    justify-content: center;
 }
 
+.info-img img {
+    width: 100%;
+    max-width: 180px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* AÑADIDO: altura fija + object-fit para que todas queden iguales */
+}
+
+/*SECCIÓN: CULTURA*/
+.culture {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--color-fondo);
+}
+
+.culture .info-text {
+    width: 100%; /* En esta sección el texto ocupa todo el ancho */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.culture h2 {
+    color: var(--color-cafe);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.culture-card {
+    background-color: var(--color-naranja);
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.2s;
+    /*animación al hover bien sexy*/
+}
+
+.culture-card:hover {
+    transform: translateY(-4px);
+}
+
+.culture-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.culture-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.culture-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
 footer {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #494744;
-    border-block-start: 2px solid #494744;
+    text-align: center;
+    padding: 15px 20px;
+    color: var(--color-texto);
+    border-top: 2px solid var(--color-texto);
+    margin-top: auto; /* AÑADIDO: empuja el footer al fondo si la página es corta */
 }
 
+/* ========================================
+   RESPONSIVE — MÓVIL (max 768px)
+======================================== */
+@media (max-width: 768px) {
+
+    /* Muestra el botón hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Oculta el menú por defecto en móvil */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* justo debajo del navbar */
+        left: 0;
+        width: 100%;
+        background-color: var(--color-navbar);
+        border-bottom: 2px solid var(--color-texto);
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    /* Cuando el JS le añade la clase .open, el menú aparece */
+    .menu.open {
+        display: flex;
+    }
+
+    .menu a {
+        margin: 0;
+        padding: 12px 20px;
+        border-bottom: 1px solid var(--color-texto);
+    }
+
+    /* Las secciones pasan a columna en móvil */
+    .info,
+    .frieds,
+    .drinks,
+    .sauces {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* El texto ocupa todo el ancho en móvil */
+    .info-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Las cards de cultura pasan a 1 columna */
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hero con menos padding en móvil */
+    .hero {
+        padding: 20px;
+        min-height: 280px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
 

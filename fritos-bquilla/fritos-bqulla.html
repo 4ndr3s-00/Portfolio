@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +7,185 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- HEADER / NAVEGACIÓN -->
     <header>
         <div class="navbar">
-            <div class="logo"><img src="img/empanada.png"  class="logoimg" alt=""></div>
-            <nav class="menu">
-                <a href="places">Puntos de fritos</a>
-                <a href="frieds">Fritos</a>
-                <a href="drinks">Bebidas</a>
-                <a href="sauces">Salsas</a>
+            <div class="logo">
+                <img src="img/empanada.png" class="logoimg" alt="Logo empanada">
+            </div>
+
+            <nav class="menu" id="main-menu">
+                <a href="#places">Puntos de fritos</a>
+                <a href="#frieds">Fritos</a>
+                <a href="#drinks">Bebidas</a>
+                <a href="#sauces">Salsas</a>
             </nav>
         </div>
     </header>
 
-    <div class="hero">
+    <!--BANNER PRINCIPAL -->
+    <section class="hero">
         <h1>El verdadero sabor de la costa</h1>
-        <p><b>Sorprendete on los increibles sabores de los fritos Barranquilleros. Disfruta una explocion de sabores con nuestros fritos como las arepas de huevo, carimañolas y empanadas crujuentes y llenas de sazon, acompañados de gaseosas o jugos y claro una gran variedad de diferentes salsas con diferentes sabores y texturas.</b></p>
-    </div>
-    <article class="info">    
+        <p>
+            <b>Sorprendete con los increibles sabores de los fritos Barranquilleros.
+            Disfruta una explosion de sabores con nuestros fritos como las arepas de huevo,
+            carimañolas y empanadas crujientes y llenas de sazon, acompañados de gaseosas
+            o jugos y claro una gran variedad de diferentes salsas con diferentes sabores
+            y texturas.</b>
+        </p>
+    </section>
+
+    <!-- SECCIÓN: PUNTOS DE FRITOS-->
+    <article class="info" id="places">
         <div class="info-text">
             <h2>Puntos de fritos</h2>
-            <p>Si lo que quiers es un buen <b>frito</b> de esos que suenan crocantes y vienen bien rellenos, aqui es donde es; desde arepa de huevo y carimañolas hasta empanadas con diferentes rellenos, todo acompañado con bebidas bien frias pa' bajarlo y salsas desde picantes hasta con sabores dulces que le menten el toque final. esto no es cualquier comida, es <b>cultura</b>. </p>
+            <p>
+                Si lo que quieres es un buen <b>frito</b> de esos que suenan crocantes y vienen
+                bien rellenos, aqui es donde es; desde arepa de huevo y carimañolas hasta
+                empanadas con diferentes rellenos, todo acompañado con bebidas bien frias
+                pa' bajarlo y salsas desde picantes hasta con sabores dulces que le meten
+                el toque final. Esto no es cualquier comida, es <b>cultura</b>.
+            </p>
             <h3>Horarios</h3>
             <p>Abierto de lunes a domingo de 6:30am a 10:00pm</p>
             <h3>Ubicacion</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.397136639502!2d-74.8059985664282!3d10.933343715378724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5d2954ede10c3%3A0x806d9db1d2645dbd!2sLa%20Frutera%20del%20Gordo!5e0!3m2!1ses-419!2sco!4v1775660982372!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.397136639502!2d-74.8059985664282!3d10.933343715378724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5d2954ede10c3%3A0x806d9db1d2645dbd!2sLa%20Frutera%20del%20Gordo!5e0!3m2!1ses-419!2sco!4v1775660982372!5m2!1ses-419!2sco"
+                width="100%"
+                height="300"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa ubicación Fritos Barranquilla">
+            </iframe>
+            
         </div>
         <div class="info-img">
-            <img src="img/info1.jpeg" alt="">
-            <img src="img/info2.jpeg" alt="">
-            <img src="img/info3.jpeg" alt="">
+            <img src="img/info1.jpeg" alt="Frito 1">
+            <img src="img/info2.jpeg" alt="Frito 2">
+            <img src="img/info3.jpeg" alt="Frito 3">
         </div>
     </article>
-    <article class="frieds">
+
+    <!-- SECCIÓN: TIPOS DE FRITOS -->
+    <article class="frieds" id="frieds">
         <div class="info-text">
             <h2>Tipos de fritos</h2>
-            <h4>Arepa de huevo</h4>
-            <p>La arepa de huevo es uno de los fritos mas representativos de la costa. se prepara con masa de maiz frita y rellena con huevo, quedando crijuente por fuera y suave por dentro.</p>
-
-            <h4>Carimañola</h4>
-            <p>La carimañola esta hecha a base de yuca y se rellena con carne o queso. es crocante por fuera y muy suave en su interior, siendo un clasico en los desayunos.</p>
-
-            <h4>empanada</h4>
-            <p>La empanada es un frito muy popular en todo colombia. se elabora con masa de maiz rellena de carne, pollo, papa o queso</p>
+            <h3>Arepa de huevo</h3>
+            <p>
+                La arepa de huevo es uno de los fritos mas representativos de la costa.
+                Se prepara con masa de maiz frita y rellena con huevo, quedando crujiente
+                por fuera y suave por dentro.
+            </p>
+            <h3>Carimañola</h3>
+            <p>
+                La carimañola esta hecha a base de yuca y se rellena con carne o queso.
+                Es crocante por fuera y muy suave en su interior, siendo un clasico en los desayunos.
+            </p>
+            <h3>Empanada</h3>
+            <p>
+                La empanada es un frito muy popular en todo Colombia.
+                Se elabora con masa de maiz rellena de carne, pollo, papa o queso.
+            </p>
         </div>
         <div class="info-img">
-
+            <img src="img/arepa-de-huevo.jpeg" alt="Arepa de huevo">
+            <img src="img/carimanolas.jpg" alt="Carimañolas">
+            <img src="img/empanadas.avif" alt="Empanadas">
         </div>
     </article>
+
+    <!-- SECCIÓN: BEBIDAS -->
+    <article class="drinks" id="drinks">
+        <div class="info-text">
+            <h2>Bebidas</h2>
+            <p>
+                Disfruta de nuestras deliciosas bebidas refrescantes que complementan perfectamente
+                nuestros fritos. Como por ejemplo, la tradicional limonada, el jugo de maracuya,
+                el jugo de naranja, el agua de panela o una fría gaseosa para acompañar tu comida
+                y hacerla aún más deliciosa.
+            </p>
+        </div>
+        <div class="info-img">
+            <img src="img/limonada.jpg" alt="Limonada">
+            <img src="img/jugo-de-naranja.jpg" alt="Jugo de naranja">
+            <img src="img/agua-de-panela.jpg" alt="Agua de panela">
+        </div>
+    </article>
+
+    <!-- SECCIÓN: SALSAS -->
+    <article class="sauces" id="sauces">
+        <div class="info-text">
+            <h2>Salsas</h2>
+            <p>
+                Nuestras salsas son el complemento perfecto para realzar el sabor de nuestros fritos.
+                Cada una está diseñada para ofrecer una experiencia de sabor única que hará que cada
+                bocado sea aún más delicioso.
+            </p>
+        </div>
+        <div class="info-img">
+            <img src="img/salsa-aji.jpg" alt="Salsa de ají">
+            <img src="img/salsa-rosada.jpg" alt="Salsa rosada">
+            <img src="img/guacamole.jpg" alt="Guacamole">
+        </div>
+    </article>
+
+    <!-- SECCIÓN: CULTURA-->
+    <article class="culture">
+        <div class="info-text">
+            <h2>Cultura de los fritos</h2>
+            <p>
+                La cultura de los fritos en Barranquilla es una parte fundamental de la identidad
+                culinaria de la ciudad. Estos deliciosos bocados no solo son una opción popular para
+                el desayuno, sino que también forman parte de la tradición gastronómica local.
+            </p>
+        </div>
+
+        <div class="culture-grid">
+            <div class="culture-card">
+                <span class="culture-icon">🫱</span>
+                <h3>Cómelo caliente</h3>
+                <p>Un frito frío pierde toda su gracia. Consúmelo recién salido del aceite.</p>
+            </div>
+            <div class="culture-card">
+                <span class="culture-icon">🫙</span>
+                <h3>Escoge tu salsa</h3>
+                <p>Cada frito tiene su salsa ideal. Experimenta con las opciones disponibles.</p>
+            </div>
+            <div class="culture-card">
+                <span class="culture-icon">💧</span>
+                <h3>Acompáñalo bien</h3>
+                <p>Un buen jugo o gaseosa bien fría es parte de la experiencia.</p>
+            </div>
+            <div class="culture-card">
+                <span class="culture-icon">🤝</span>
+                <h3>Respeta al de los fritos</h3>
+                <p>el de los fritos no te va a cobrar de una tu tienes que decirle lo que te comiste.</p>
+            </div>
+            <div class="culture-card">
+                <span class="culture-icon">🌶️</span>
+                <h3>Conoce tu tolerancia</h3>
+                <p>Si no eres de picante, pregunta antes de echarle salsa sin saber.</p>
+            </div>
+            <div class="culture-card">
+                <span class="culture-icon">📍</span>
+                <h3>Apoya lo local</h3>
+                <p>Estos fritos son cultura barranquillera. Prefiere los puestos del barrio.</p>
+            </div>
+        </div>
+    </article>
+
     <footer>
         <p>
-            Creado con ❤️ de <b>&copy4ndres-00 INC</b> para <b>LA GENTE DEL PUEBLO</b> |
+            Creado con ❤️ de <b>&copy; 4ndres-00 INC</b> para <b>LA GENTE DEL PUEBLO</b> |
             <time datetime="2026">2026</time> |
             Referencia HTML5 + CSS3
         </p>
-        <p><small>creado con el proposito de que la gente conozca la variedad de fritos y su cultura :) </small></p>
+        <p>
+            <small>Creado con el proposito de que la gente conozca la variedad de fritos y su cultura :)</small>
+        </p>
     </footer>
+
 </body>
 </html>
