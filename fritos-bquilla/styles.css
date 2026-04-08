@@ -1,0 +1,80 @@
+body {
+    background-color: 	#fff9ef;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #494744;
+    background-color: #f4ce71;
+    margin: 0%;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #494744;
+}
+
+.logoimg {
+    width: 80px;
+    height: auto;
+}
+
+.hero {
+    background-image: linear-gradient(
+        #00000080,
+        #00000080), 
+        url(img/banner-fritos.jpeg);
+    text-align: center;
+    color: bisque;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 150px;
+
+}
+
+h1{
+    font-size: 50px;
+}
+
+.info h2 {
+    font-size: 30px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.info-text{
+    width: 50%;
+    text-align: center;
+}
+
+.info-img {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+footer {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #494744;
+    border-block-start: 2px solid #494744;
+}
+
+
