@@ -1,6 +1,3 @@
-/* ========================================
-   PALETA DE COLORES · Fritos B/quilla
-======================================== */
 :root {
     --color-navbar:      #f4ce71;  /* Navbar, highlights, badges */
     --color-fondo:       #fff9ef;  /* Fondo general del body */
@@ -32,7 +29,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/*HEADER */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -63,7 +59,6 @@ nav a:hover {
     color: var(--color-rojo);
 }
 
-/* BANNER */
 .hero {
     background-image: linear-gradient(
         var(--color-overlay),
@@ -88,7 +83,6 @@ h1 {
     margin: 0 0 16px;
 }
 
-/* SECCIONES */
 .info,
 .frieds,
 .drinks,
@@ -98,11 +92,8 @@ h1 {
     align-items: center;
     padding: 40px;
     gap: 20px;
-    /* CAMBIO: se eliminaron grid-template-columns y grid-template-rows
-       que estaban mezclados con flex sin efecto */
 }
 
-/* Secciones alternas con fondo mantequilla para separar visualmente */
 .frieds,
 .sauces {
     background-color: var(--color-mantequilla);
@@ -110,7 +101,6 @@ h1 {
 
 .info-text {
     width: 50%;
-    /* CAMBIO: text-align center → left, se lee mejor en bloques de texto */
     text-align: left;
 }
 
@@ -128,7 +118,7 @@ h1 {
     display: flex;
     gap: 8px;
     align-items: center;
-    flex-wrap: wrap; /* AÑADIDO: las imágenes bajan si no caben */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -138,10 +128,9 @@ h1 {
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    /* AÑADIDO: altura fija + object-fit para que todas queden iguales */
+
 }
 
-/*SECCIÓN: CULTURA*/
 .culture {
     padding: 40px;
     text-align: center;
@@ -149,7 +138,7 @@ h1 {
 }
 
 .culture .info-text {
-    width: 100%; /* En esta sección el texto ocupa todo el ancho */
+    width: 100%;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -198,73 +187,18 @@ h1 {
     margin: 0;
 }
 
-/* ========================================
-   FOOTER
-======================================== */
 footer {
     text-align: center;
     padding: 15px 20px;
     color: var(--color-texto);
     border-top: 2px solid var(--color-texto);
-    margin-top: auto; /* AÑADIDO: empuja el footer al fondo si la página es corta */
+    margin-top: auto;
 }
-
-/* ========================================
-   RESPONSIVE — MÓVIL (max 768px)
-======================================== */
-@media (max-width: 768px) {
-
-    /* Muestra el botón hamburguesa */
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Oculta el menú por defecto en móvil */
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px; /* justo debajo del navbar */
-        left: 0;
-        width: 100%;
-        background-color: var(--color-navbar);
-        border-bottom: 2px solid var(--color-texto);
-        padding: 10px 0;
-        z-index: 99;
-    }
-
-    /* Cuando el JS le añade la clase .open, el menú aparece */
-    .menu.open {
-        display: flex;
-    }
-
-    .menu a {
-        margin: 0;
-        padding: 12px 20px;
-        border-bottom: 1px solid var(--color-texto);
-    }
-
-    /* Las secciones pasan a columna en móvil */
-    .info,
-    .frieds,
-    .drinks,
-    .sauces {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    /* El texto ocupa todo el ancho en móvil */
     .info-text {
         width: 100%;
         text-align: center;
     }
 
-    /* Las cards de cultura pasan a 1 columna */
-    .culture-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Hero con menos padding en móvil */
     .hero {
         padding: 20px;
         min-height: 280px;
@@ -273,5 +207,5 @@ footer {
     h1 {
         font-size: 32px;
     }
-}
+
 
