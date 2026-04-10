@@ -1,14 +1,14 @@
 :root {
-    --color-navbar:      #f4ce71;  /* Navbar, highlights, badges */
-    --color-fondo:       #fff9ef;  /* Fondo general del body */
-    --color-texto:       #494744;  /* Texto, bordes, footer, links nav */
-    --color-hero-texto:  #ffe4c4;  /* Texto sobre el banner hero */
-    --color-overlay:     #00000080;/* Overlay oscuro sobre el banner */
-    --color-rojo:        #c0392b;  /* Botones CTA, etiquetas picante, acentos */
-    --color-naranja:     #e8813a;  /* Hover en botones, íconos, separadores */
-    --color-cafe:        #3d2b1f;  /* Títulos h1/h2, texto de peso fuerte */
-    --color-mantequilla: #f9edd8;  /* Cards, secciones alternas, fondos article */
-    --color-verde:       #2e7d32;  /* Badges disponible, salsa verde, tags */
+    --color-navbar:      #f4ce71;  
+    --color-fondo:       #fff9ef;  
+    --color-texto:       #494744; 
+    --color-hero-texto:  #ffe4c4;  
+    --color-overlay:     #00000080;
+    --color-rojo:        #c0392b;
+    --color-naranja:     #e8813a;  
+    --color-cafe:        #3d2b1f;  
+    --color-mantequilla: #f9edd8;  
+    --color-verde:       #2e7d32;
 }
 
 
@@ -151,18 +151,21 @@ h1 {
 
 .culture-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
 .culture-card {
-    background-color: var(--color-naranja);
+    background-color: var(--color-rojo);
     border-radius: 12px;
     padding: 20px;
     color: #fff;
-    text-align: center;
+    text-align: left;
     transition: transform 0.2s;
-    /*animación al hover bien sexy*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
 }
 
 .culture-card:hover {
@@ -171,8 +174,7 @@ h1 {
 
 .culture-icon {
     font-size: 32px;
-    display: block;
-    margin-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .culture-card h3 {
@@ -194,6 +196,8 @@ footer {
     border-top: 2px solid var(--color-texto);
     margin-top: auto;
 }
+
+@media (max-width: 768px){
     .info-text {
         width: 100%;
         text-align: center;
@@ -208,4 +212,4 @@ footer {
         font-size: 32px;
     }
 
-
+}
