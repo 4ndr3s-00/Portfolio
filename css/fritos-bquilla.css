@@ -63,7 +63,7 @@ nav a:hover {
     background-image: linear-gradient(
         var(--color-overlay),
         var(--color-overlay)
-    ), url(img/banner-fritos.jpeg);
+    ), url('../img/img-fritos/banner-fritos.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -187,14 +187,6 @@ h1 {
     font-size: 14px;
     line-height: 1.5;
     margin: 0;
-}
-
-footer {
-    text-align: center;
-    padding: 15px 20px;
-    color: var(--color-texto);
-    border-top: 2px solid var(--color-texto);
-    margin-top: auto;
 }
 
 @media (max-width: 768px){
