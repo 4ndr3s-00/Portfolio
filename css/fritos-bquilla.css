@@ -1,3 +1,5 @@
+/* Root para definir la paleta de colores  */
+
 :root {
     --color-navbar:      #f4ce71;  
     --color-fondo:       #fff9ef;  
@@ -15,6 +17,7 @@
 * {
     box-sizing: border-box;
 }
+
 
 body {
     background-color: var(--color-fondo);
@@ -206,9 +209,6 @@ h1 {
 
 }
 
-.back:hover {
-  color: #fff8f0;
-  background-color: #c8924a;
-  border-color: #c8924a;
-  border-radius: 4px;
+footer {
+    background-color: var(--color-navbar);
 }
