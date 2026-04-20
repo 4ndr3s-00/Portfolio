@@ -21,9 +21,8 @@ header h1 {
 }
 
 section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2.5rem 1.5rem;
   background-color: #f5ede0;

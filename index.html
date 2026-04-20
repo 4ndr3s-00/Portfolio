@@ -9,26 +9,81 @@
 </head>
 <body>
     <header>
-        <h1>Andres Teheran</h1>
-        <ul>
-            <li><a href="about-me">About me</a></li>
-            <li><a href="proyects">Proyects</a></li>
-            <li><a href="contact">Contact</a></li>
-        </ul>
+        <div class="navbar">
+            <div class="name">
+                <h1>Andres Teheran</h1>
+            </div>
+        
+            <div class="logo">
+                <img src="img/img-portfolio/logo/tiburon-logo-temovebg-invert.png" class="logoimg" alt="Logo tiburon">
+            </div>
+
+            <div class="menu">
+                <a href="#about-me">About me</a>
+                <a href="#proyects">Proyects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </header>
 
     <section id="about-me">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio :)</p>
+        <p>I'm currently learning and building projects while improving my programming logic and best practices. <br>
+            Right now, I'm working on a small bank project using Python.
+            <br>
+            🐍 Learning Python
+            <br>
+            🌐 Learning JavaScript
+            <br>
+            🎨 Learning HTML & CSS
+            <br>
+            📚 Always improving and exploring new technologies
+            <br>
+            ⚽ I enjoy playing football and basketball
+            <br>
+            😄 I like learning new things and estar parchao
+        </p>
     </section>
 
     <section id="proyects">
         <h2>Proyects</h2>
-        <ul>
-            <li><a href="pets.html" target="_blank">See pets project</a></li>
-            <li><a href="fritos-bqulla.html" target="_blank">See Fritos Barranquilla project</a></li>
-            <li><a href="" target="_blank"></a></li>
-        </ul>
+        <div class="projects-grid">
+            <div class="card">
+                <div class="card-preview">
+                    <img src="img/img-portfolio/img-proyects/pets-preview.png" alt="Preview Pets">
+                    <div class="card-overlay">
+                        <div class="card-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                    <h3>Pets</h3>
+                    <p>Page with a gallery of my pets</p>
+                    <a href="pets.html" target="_blank">See project</a>
+            </div>
+
+            <div class="card">
+                    <div class="card-preview">
+                        <img src="img/img-portfolio/img-proyects/fritos-bqulla-preview.png" alt="Preview Fritos">
+                        <div class="card-overlay">
+                            <div class="card-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Fritos Barranquilla</h3>
+                    <p>Page for a local business in Barranquilla</p>
+                    <a href="fritos-bqulla.html" target="_blank">See project</a>
+            </div>
+            
+            <div class="card">
+                    <h3>Coming soon...</h3>
+                    <p>More projects coming soon...</p>
+                    <a href="#" target="_blank">...</a>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
