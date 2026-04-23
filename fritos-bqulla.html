@@ -16,6 +16,9 @@
                 <img src="img/img-fritos/empanada.png" class="logoimg" alt="Logo empanada">
             </div>
 
+            <!-- Botón hamburguesa (solo visible en móvil) -->
+            <button class="hamburger" id="hamburger-btn">☰</button>
+
             <nav class="menu" id="main-menu">
                 <a href="#places">Puntos de fritos</a>
                 <a href="#frieds">Fritos</a>
@@ -126,7 +129,6 @@
         </div>
     </article>
 
-    <!-- 5to Articulo: Cultura fritistica -->
     <article class="culture">
         <div class="info-text">
             <h2>Cultura de los fritos</h2>
@@ -137,8 +139,9 @@
             </p>
         </div>
 
-        <!-- Tarjetas con informacion de la cultura -->
         <div class="culture-grid">
+
+            <!-- Columna 1 — siempre visible -->
             <div class="culture-card">
                 <span class="culture-icon">🫱</span>
                 <h3>Cómelo caliente</h3>
@@ -154,22 +157,48 @@
                 <h3>Acompáñalo bien</h3>
                 <p>Un buen jugo o gaseosa bien fría es parte de la experiencia.</p>
             </div>
-            <div class="culture-card">
+
+            <!-- Columna 2 — oculta por defecto -->
+            <div class="culture-card hidden-card">
                 <span class="culture-icon">🤝</span>
                 <h3>Respeta al de los fritos</h3>
-                <p>el de los fritos no te va a cobrar de una tu tienes que decirle lo que te comiste.</p>
+                <p>El de los fritos no te va a cobrar de una, tú tienes que decirle lo que te comiste.</p>
             </div>
-            <div class="culture-card">
+            <div class="culture-card hidden-card">
                 <span class="culture-icon">🌶️</span>
                 <h3>Conoce tu tolerancia</h3>
                 <p>Si no eres de picante, pregunta antes de echarle salsa sin saber.</p>
             </div>
-            <div class="culture-card">
+            <div class="culture-card hidden-card">
                 <span class="culture-icon">📍</span>
                 <h3>Apoya lo local</h3>
                 <p>Estos fritos son cultura barranquillera. Prefiere los puestos del barrio.</p>
             </div>
+
+            <!-- Columna 3 — oculta por defecto -->
+            <div class="culture-card hidden-card">
+                <span class="culture-icon">🕐</span>
+                <h3>Madruga</h3>
+                <p>Los mejores fritos se acaban temprano. El que madruga, come arepa de huevo.</p>
+            </div>
+            <div class="culture-card hidden-card">
+                <span class="culture-icon">🔥</span>
+                <h3>El aceite importa</h3>
+                <p>Un buen frito se reconoce por el aceite limpio y la temperatura correcta.</p>
+            </div>
+            <div class="culture-card hidden-card">
+                <span class="culture-icon">😋</span>
+                <h3>Repite sin pena</h3>
+                <p>Nadie come un solo frito. Pedir otro es parte de la experiencia.</p>
+            </div>
+
         </div>
+
+        <div class="culture-btns">
+            <button id="btn-ver-mas">Ver más</button>
+            <button id="btn-ver-menos" class="hidden-btn">Ver menos</button>
+        </div>
+
     </article>
 
     <!-- Creditos de la pagina  -->
@@ -199,6 +228,8 @@
             <span class="footer-badge">HTML5 + CSS3</span>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

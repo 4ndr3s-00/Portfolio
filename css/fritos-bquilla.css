@@ -154,7 +154,7 @@ h1 {
 
 .culture-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
@@ -166,8 +166,8 @@ h1 {
     text-align: left;
     transition: transform 0.2s;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
 }
 
@@ -207,8 +207,85 @@ h1 {
         font-size: 32px;
     }
 
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 footer {
     background-color: var(--color-navbar);
+}
+
+/* ── Menú hamburguesa (solo móvil) ── */
+.hamburger {
+    display: none; /* oculto en desktop */
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--color-texto);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* aparece en móvil */
+    }
+
+    .menu {
+        display: none; /* menú oculto por defecto en móvil */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-navbar);
+        border-top: 2px solid var(--color-texto);
+        z-index: 200;
+    }
+
+    .menu.open {
+        display: flex; /* aparece cuando JS agrega .open */
+    }
+
+    .menu a {
+        padding: 14px 20px;
+        border-bottom: 1px solid var(--color-texto);
+        margin: 0;
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
+    }
+}
+
+.hidden-card {
+    display: none;
+}
+
+.culture-btns {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.culture-btns button {
+    background-color: var(--color-rojo);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.culture-btns button:hover {
+    background-color: var(--color-cafe);
+}
+
+.hidden-btn {
+    display: none;
 }
