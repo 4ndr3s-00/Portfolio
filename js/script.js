@@ -1,18 +1,20 @@
+
+// MENU HAMBURGER
 const hamburger = document.getElementById('hamburger-btn');
 const menu = document.getElementById('main-menu');
 
-// Abrir/cerrar al tocar el botón
+// Open/close by touching the button
 hamburger.addEventListener('click', function (e) {
     e.stopPropagation();
     menu.classList.toggle('open');
 });
 
-// Cerrar al tocar fuera del menú
+// Close by tapping outside the menu
 document.addEventListener('click', function () {
     menu.classList.remove('open');
 });
 
-// Cerrar al elegir un link
+// Close when selecting a link
 menu.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
         menu.classList.remove('open');
@@ -20,6 +22,8 @@ menu.querySelectorAll('a').forEach(function (link) {
 });
 
 
+
+// SHOW & HIDDEN
 const btnVerMas   = document.getElementById('btn-ver-mas');
 const btnVerMenos = document.getElementById('btn-ver-menos');
 const hiddenCards = document.querySelectorAll('.hidden-card');
