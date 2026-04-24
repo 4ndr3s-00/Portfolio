@@ -133,14 +133,13 @@ button[type="submit"]:hover {
   background-color: #2a2a2a;
   border-color: #555;
   color: #f0f0f0;
-} 
+}
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  
 }
 
 .logoimg {
@@ -184,6 +183,7 @@ button[type="submit"]:hover {
 .card a:hover {
   color: #ffffff;
 }
+
 .card:hover {
   transform: translateY(-6px);
   border-color: #7a9cc4;
@@ -233,4 +233,65 @@ button[type="submit"]:hover {
   padding: 2px 8px;
   border-radius: 4px;
   border: 0.5px solid #444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#welcome-msg {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #7a9cc4;
+  display: none;
+}
+
+#btn-welcome {
+  background-color: #1e1e1e;
+  border: 0.5px solid #2a2a2a;
+  color: #ccc;
+  font-size: 0.9rem;
+  padding: 8px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+#btn-welcome:hover {
+  background-color: #2a2a2a;
+  border-color: #555;
+  color: #f0f0f0;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  header .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 2rem 1.25rem;
+  }
+
+  form {
+    max-width: 100%;
+  }
 }
