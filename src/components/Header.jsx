@@ -13,6 +13,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const navLinks = [
+    { label: t.nav.about, href: '#about' },
     { label: t.nav.projects, href: '#projects' },
     { label: t.nav.techStack, href: '#techstack' },
     { label: t.nav.contact, href: '#contact' },

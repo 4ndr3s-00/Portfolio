@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
+import About from './components/About'
 import TechStack from './components/TechStack'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
@@ -14,6 +15,7 @@ export default function App() {
       <main>
         <Hero />
         <Marquee />
+        <About />
         <TechStack />
         <Projects />
       </main>

@@ -1,5 +1,6 @@
 export default {
   nav: {
+    about: "Sobre Mí",
     projects: "Proyectos",
     techStack: "Stack",
     contact: "Contacto",
@@ -32,6 +33,18 @@ export default {
       "Hyprland",
       "Web Scraping",
       "IA",
+    ],
+  },
+  about: {
+    title: "Sobre Mí",
+    intro: "Desarrollador de Software en formación en RIWI, enfocado en construir proyectos reales mientras afianzo mis habilidades de backend y frontend.",
+    items: [
+      { icon: "telescope", text: "Construyendo freecode-zero — ejecuta OpenCode 100% gratis, para siempre" },
+      { icon: "teacher", text: "Y Mentia — plataforma de aprendizaje adaptativo con motor de clasificación basado en reglas" },
+      { icon: "seedling", text: "Profundizando en TypeScript, React y Node.js" },
+      { icon: "penguin", text: "Sistema operativo: Arch Linux + Hyprland, totalmente personalizado" },
+      { icon: "brain", text: "Áreas de enfoque: desarrollo backend e IA aplicada" },
+      { icon: "zap", text: "Dato curioso: Me gusta aprender cosas nuevas y estar parchao" },
     ],
   },
   techStack: {
