@@ -7,9 +7,9 @@ export default {
   },
   hero: {
     name: "Andres Teheran",
-    role: "Full Stack Software Developer",
+    role: "Full Stack Developer — Automations & AI",
     description:
-      "Building end-to-end web applications, robust backend architectures, web scraping pipelines, and AI integration.",
+      "Specialist in automations and AI integration. I build systems that connect AI models with real-world workflows.",
     kicker: "// profile — system online",
     sys: "opencode://online",
     prompt: "andres@arch:~/dev$ ./start --free-tier",
@@ -18,33 +18,33 @@ export default {
   },
   marquee: {
     items: [
+      "Automations",
+      "AI Integration",
       "React",
-      "JavaScript",
       "TypeScript",
-      "Tailwind CSS",
       "Python",
       "FastAPI",
       "Playwright",
-      "BeautifulSoup",
-      "PostgreSQL",
       "Ollama",
-      "OpenCode",
+      "PostgreSQL",
+      "Web Scraping",
+      "Gemini",
+      "OpenAI",
+      "Docker",
       "Arch Linux",
       "Hyprland",
-      "Web Scraping",
-      "AI",
     ],
   },
   about: {
     title: "About Me",
-    intro: "Software Developer in training at RIWI, focused on building real projects while sharpening my backend and frontend skills.",
+    intro: "Specialist in automations and AI integration. I build systems that connect AI models with real-world workflows — from content generation to adaptive platforms.",
     items: [
-      { icon: "telescope", text: "Currently building freecode-zero — run OpenCode 100% free, forever" },
+      { icon: "zap", text: "Specialty: process automation and AI integration in real applications" },
+      { icon: "telescope", text: "Building OmniFlow — omnichannel content intelligence hub with AI" },
       { icon: "teacher", text: "And Mentia — adaptive learning platform with a rule-based ranking engine" },
-      { icon: "seedling", text: "Deepening my knowledge of TypeScript, React and Node.js" },
+      { icon: "brain", text: "Mastering TypeScript, React, Python and FastAPI" },
       { icon: "penguin", text: "Daily driver: Arch Linux + Hyprland, fully customized" },
-      { icon: "brain", text: "Focus areas: backend development and applied AI" },
-      { icon: "zap", text: "Fun fact: I like learning new things and hanging out" },
+      { icon: "seedling", text: "Fun fact: I like learning new things and hanging out" },
     ],
   },
   techStack: {
@@ -58,6 +58,13 @@ export default {
   },
   projects: {
     title: "Featured Projects",
+    omniflow: {
+      name: "OmniFlow",
+      description:
+        "Omnichannel content intelligence and scheduling hub. Transforms an idea into native content optimized for 9 platforms (X, LinkedIn, Blog, TikTok, Instagram, YouTube) using AI, with approval workflow and automatic distribution.",
+      tags: ["React", "FastAPI", "Python", "AI", "Docker"],
+      liveUrl: "https://4ndr3s-00.github.io/OmniFlow-content-generation/",
+    },
     freecodeZero: {
       name: "freecode-zero",
       path: "~/freecode-zero",
