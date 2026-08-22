@@ -69,11 +69,10 @@ export default function Projects() {
               >
                 {isLive && (
                   <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" className="block relative h-44 overflow-hidden border-b border-white/[0.06]">
-                    <iframe
-                      src={p.liveUrl}
-                      title={proj.name}
-                      className="w-full h-full border-0 pointer-events-none scale-[0.45] origin-top-left"
-                      style={{ width: '222%', height: '222%' }}
+                    <img
+                      src="/omniflow-preview.png"
+                      alt={proj.name}
+                      className="w-full h-full object-cover object-top"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-surface/80 via-transparent to-transparent" />
